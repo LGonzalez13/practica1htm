@@ -8,6 +8,13 @@
    
     
 }
+#intro
+{
+    background-color:#FF6666;
+    padding-top: 90px;
+    height: 1000px;
+    padding-right: 2000px;
+}
 
 #sub
 {
@@ -44,7 +51,7 @@
 }
 #espacio
 {
-    height: 50px;
+    height: 300px;
 }
 #espacio2
 {
