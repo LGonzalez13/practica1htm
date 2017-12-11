@@ -62,31 +62,43 @@ div#col
     padding-left: 20px;
     height: 195px;
 }
-p#colRed,#colBlue,#col2
+p#BachTecP, #BUNAMP, 
+#BachGralP, #UnivVirtualP,
+#PrepaLP,#col2,
+#UADMP,#PoliVP,#CUAEDP,
+#UDGVP,#UVEGP,#testVocacionalP
 {
     color: white;
 }
-#colRed
+#PrepaLP,#UADMP
 {
     
     border-left: 5px solid #CC2521;
     padding-bottom: 9px;
     padding-top: 2px;
     padding-left: 2px;
+    cursor: pointer;
 }
-#colBlue
+#BachTecP, #BUNAMP, 
+#BachGralP, #UnivVirtualP,
+#PoliVP,#CUAEDP,
+#UDGVP,#UVEGP,#testVocacionalP
 {
     border-left: 5px solid #1F7773;
     padding-bottom: 9px;
     padding-top: 2px;
     padding-left: 2px;
+    cursor: pointer;
 }
-#pR
+#PrepaLD,#UADMD
 {
     padding-left: 6px;
     background-color: #E35E5E;
 }
-#pB
+#BachTecD, #BUNAMD, 
+#BachGralD, #UnivVirtualD,
+#PoliVD,#CUAEDD,
+#UDGVD,#UVEGD,#testVocacionalD
 {
     padding-left: 6px;
     background-color: #3EC8C0;
