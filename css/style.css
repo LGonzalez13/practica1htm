@@ -1,11 +1,9 @@
 #imgMM
 {
     position: absolute;
-    bottom: 80px;
-    left: 1620px;
-    top: -18px;
-  
-   
+    width: 17%;
+    right: 1%;
+    top: -1%;
     
 }
 #intro
@@ -22,11 +20,16 @@
     padding-left:40px;
 }
 
-#d1
+#d1,#te2
 {
     color:#9C9796;
     left:30px;
     
+}
+#jbt
+{
+    color:#9C9796;
+    left:30px;
 }
 #linea
 {
@@ -42,11 +45,17 @@
 
 #he
 {
+    
+        
     position: fixed;
-    background-color:#29ADB8;
-    color:#FFFFFF;
-    width: 100%;
-  
+    right: 0;
+    background-color: #00adb6;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    height: 94px;
+        
+      
     
 }
 #espacio
@@ -102,3 +111,64 @@ img#imglink,#imgregistro
     width: 300px;
     height: 300px;
 }
+#imgEsLi
+{
+    width: 400px;
+    height: 400dpx;
+    top: -48px;
+    position: relative;
+}
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+#pi
+{
+    height: 249px;
+     font-family: "Tahoma";
+}
+
+.texto
+  {
+    font-size: 18px;
+  }
+  .bold
+  {
+    font-weight: bold;
+  }
+  .gray
+  {
+    color:  #999999;
+  }
+  .red
+  {
+    color: #e75d61;
+  }
+  .blue
+  {
+    color: #00adb6;
+  }
+  .blue-dark
+  {
+    background-color: #007873;
+    left: 0px;
+    position: absolute;
+    width: 7px;
+    height: 100%;
+  }
+  .header
+  {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  #bord_first
+  {
+    border-left: 2px solid #00adb6;
+  }
+  .blue-box
+  {
+    background-color: #25c8c0;
+    color: #fff;
+    border-left: 7px solid #00adb6;
+  }
