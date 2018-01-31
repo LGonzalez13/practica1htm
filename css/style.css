@@ -1,3 +1,10 @@
+body
+{
+  font-family: "Tahoma";
+  color: #fff;
+  font-size: 18px;
+
+}
 #imgMM
 {
     position: absolute;
@@ -58,6 +65,10 @@
       
     
 }
+#estudiarLinea,#prepaYbachi,#Cursos,#Recuerda
+{
+  z-index: -1;
+}
 #espacio
 {
     height: 300px;
@@ -107,7 +118,7 @@ p#BachTecP, #BUNAMP,
 #BachTecD, #BUNAMD, 
 #BachGralD, #UnivVirtualD,
 #PoliVD,#CUAEDD,
-#UDGVD,#UVEGD,#testVocacionalD
+#UDGVD,#UVEGD,#testVocacionalP
 {
     padding-left: 6px;
     background-color: #3EC8C0;
