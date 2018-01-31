@@ -19,6 +19,7 @@ body
     padding-top: 90px;
     height: 1000px;
     padding-right: 2000px;
+    font-weight: bold;
 }
 
 #sub
@@ -150,12 +151,10 @@ img#imglink,#imgregistro
 {
     height: 249px;
      font-family: "Tahoma";
+     font-size: 18px;
 }
 
-.texto
-  {
-    font-size: 18px;
-  }
+
   .bold
   {
     font-weight: bold;
