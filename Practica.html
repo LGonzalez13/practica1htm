@@ -7,9 +7,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptMenus.js"></script>
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Menu -->
+    <section class="col-xs-2 col-sm-1 col-md-1 hidden-xs" id="abs">
+            <div class="stuff_menu" id="little_one">
+                <img class="rotateMe" id="hamburger" src="img/InicioMenu.png" />
+            </div>
+    
+            <div class="stuff_menu" data-container="body" data-placement="right" data-toggle="tooltip" id="little_two" title="ESTUDIAR EN LÍNEA">
+                <img class="img_pos rotateMe" src="img/estudiarEnLineaMenu.png" />
+            </div>
+    
+            <div class="stuff_menu" data-container="body" data-placement="right" data-toggle="tooltip" id="little_th" title="PREPA Y BACHILLERATO">
+                <img class="img_pos rotateMe" src="img/prepaYBachiMenu.png" />
+            </div>
+    
+            <div class="stuff_menu" data-container="body" data-placement="right" data-toggle="tooltip" id="little_f" title="NIVEL SUPERIOR">
+                <img class="img_pos rotateMe" src="img/nivelSupMenu.png" />
+            </div>
+    
+            <div class="stuff_menu" data-container="body" data-placement="right" data-toggle="tooltip" id="little_five" title="CURSOS">
+                <img class="img_pos rotateMe" src="img/CursosMenu.png" />
+            </div>
+    
+            <div class="stuff_menuLast" data-container="body" data-placement="right" data-toggle="tooltip" id="little_six" title="RECUERDA">
+                <img class="img_pos rotateMe" src="img/recuerdaMenu.png" />
+            </div>
+        </section>
 
     <!-- Titulo -->
 
@@ -126,14 +154,24 @@
     <!-- Middle -->
     <div class="row">
         <div id="col" class="col-md-4">
-            <div id="pR"><p id="colRed">Prepa en linea SEP</p></div>
-            <div id="pB"><p id="colBlue">Bachillerato Tecnológico Bivalente a Distancia (IPN)</p></div>
-            <div id="pB"><p id="colBlue">B@UNAM</p></div>
-            <div id="pB"><p id="colBlue">Bachillerato General por Áreas Interdisciplinarias (UDG)</p></div>
-            <div id="pB"><p id="colBlue">Universidad Virtual del Estado de Guanajuato</p></div>
+            <div id="PrepaLD"><p id="PrepaLP" onclick="cambioDescPrepaEnLinea()">
+                Prepa en linea SEP
+            </p></div>
+            <div id="BachTecD"><p id="BachTecP" onclick="cambioDescBachTec()">
+                Bachillerato Tecnológico Bivalente a Distancia (IPN)
+            </p></div>
+            <div id="BUNAMD"><p id="BUNAMP" onclick="cambioDescBUNAM()">
+                B@UNAM
+            </p></div>
+            <div id="BachGralD"><p id="BachGralP" onclick="cambioDescBachGral()">
+                Bachillerato General por Áreas Interdisciplinarias (UDG)
+            </p></div>
+            <div id="UnivVirtualD"><p id="UnivVirtualP" onclick="cambioDescUnivVirtual()">
+                Universidad Virtual del Estado de Guanajuato
+            </p></div>
         </div>
         <div id="col" class="col-md-7" style="background-color:#E35E5E;">
-            <p id="col2">
+            <p id="col2-1">
                 Es un proyecto público, flexible y completamente gratuito que se imparte en todo México.
                 Puedes acceder a su plataforma de estudio las 24 horas del día, lo cual te permite elegir
                 un horario adecuado para ti.
@@ -143,10 +181,10 @@
         </div>
     </div>
 
-    <!-- Bottom -->
+    <!-- Bloque 2 -->
     <div class="row">
         <h2 id="sub">Nivel superior</h2>
-        <div id=d1 class="col-xs-12 col-sm-8 col-md-8" style="font-family:verdana">
+        <div id="d1" class="col-xs-12 col-sm-8 col-md-8" style="font-family:verdana">
             <p>
                 Realizar estudios superiores en línea te permite crecer profesionalmente, además de combinar el estudio con tu vida
                 personal y laboral. Aquí encontrarás algunas opciones de licenciatura e ingenierías que puedes estudiar a distancia
@@ -159,5 +197,225 @@
         </div>
         <img src="img/nivelsuperior.svg" alt="Nivel Superior" id="imgNS">
     </div>
+
+    <div id="testVocacionalD" style="width:250px">
+        <a id="testVocacionalP" href="http://www.decidetusestudios.sep.gob.mx/vista/test-vocacional/" target="_blank">
+            Test vocacional
+        </a>
+    </div>
+
+    <!-- Menu 2 -->
+    <div class="row">
+        <div id="col" class="col-md-4">
+            <div id="UADMD"><p id="UADMP" onclick="cambioDescUADM()">
+                Universidad Abierta y a Distancia de México (SEP)
+            </p></div>
+            <div id="PoliVD"><p id="PoliVP" onclick="cambioDescPoliV()">
+                Polivirtual (IPN)
+            </p></div>
+            <div id="CUAEDD"><p id="CUAEDP" onclick="cambioDescCUAED()">
+                Coordinacióm de Universidad Abierta y Educación a Distancia (UNAM)
+            </p></div>
+            <div id="UDGVD"><p id="UDGVP" onclick="cambioDescUDGV()">
+                UDG Virtual
+            </p></div>
+            <div id="UVEGD"><p id="UVEGP" onclick="cambioDescUVEG()">
+                Universidad Virtual del Estado de Guanajuato
+            </p></div>
+        </div>
+        <div id="col" class="col-md-7" style="background-color:#E35E5E;">
+            <p id="col2-2">
+                Es un proyecto público, flexible y completamente gratuito que se imparte en todo México.
+                Puedes acceder a su plataforma de estudio las 24 horas del día, lo cual te permite elegir
+                un horario adecuado para ti.
+            </p>
+            <img id="imglink" src="img/link.svg" alt="Sitio web" width="150px" height="150px">
+            <img id="imgregistro" src="img/registro.svg" alt="Registro" width="150px" height="150px">
+        </div>
+    </div>
+
+    <!-- Links -->
+    <section class="col-md-10" id="Cursos">
+        <div class="col-md-12" style="border-top: .5em solid #999999;">
+            <div class="col-md-8">&nbsp;
+                <br />
+                <br />
+                <br />
+                <br />
+                <p class="header red">Cursos</p>
+
+                <p class="text gray line" style="padding-right: 10px">Ademáss de las opciones que te hemos mostrado, cada vez existen más posibilidades de aprendizajeen
+                    línea fuera de la educación formal, además de diversas herramientas que te permiten
+                    ser autodidacta y construir tu propio conocimiento.</p>
+
+                <p class="text gray" style="padding-right: 10px">Te sugerimos las siguientes plataformas, donde encontrarás diversos tutoriales, cursos y talleres
+                    que puedes aprovechar.</p>
+                <br />
+            </div>
+
+            <div class="col-md-4">
+                <img class="col-md-8" id="img-curso" src="img/Cursos.svg" />
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="red-box col-md-12">
+                        <div class="red-dark"></div>
+
+                        <p class="text bold">
+                            <a href="http://mx.televisioneducativa.gob.mx/" target="_blank">México X </a>
+                        </p>
+                    </div>
+
+                    <div class="contenedor-img ejemplo-3 col-md-12">
+                        <a href="http://mx.televisioneducativa.gob.mx/" target="_blank">
+                            <img class="col-md-12" src="img/Mexicox.png" /> </a>
+
+                        <div class="mascara col-md-12">
+                            <p class="text top-space gray-box gray">
+                                <a href="http://mx.televisioneducativa.gob.mx/" target="_blank">Este programa de la SEP reúne cursos abiertos en línea sobre una gran variedad
+                                    de temas y respaldados por las mejores instituciones educativas de México.
+                                    Para participar en ellos debes tomar en cuenta el calendario de cada uno. </a>
+                            </p>
+                        </div>
+                        <a href="http://mx.televisioneducativa.gob.mx/" target="_blank"> </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="blue-box col-md-12">
+                        <div class="blue-dark"></div>
+
+                        <p class="text bold">
+                            <a href="https://www.coursera.org/" target="_blank">Coursera </a>
+                        </p>
+                    </div>
+
+                    <div class="contenedor-img ejemplo-3 col-md-12">
+                        <a href="https://www.coursera.org/" target="_blank">
+                            <img class="col-xs-12 col-md-12" src="img/Coursera.png" /> </a>
+
+                        <div class="mascara col-md-12">
+                            <p class="text top-space gray-box gray">
+                                <a href="https://www.coursera.org/" target="_blank">Aquí encontrarás cursos sobre toda clase de temas e impartidos por diversas
+                                    instituciones educativas a nivel internacional. Pueden ser gratuitos o de bajo costo
+                                    y varían en cuanto a la duración y fechas de inicio. </a>
+                            </p>
+                        </div>
+                        <a href="https://www.coursera.org/" target="_blank"> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="red-box col-md-12">
+                        <div class="red-dark"></div>
+
+                        <p class="text bold">
+                            <a href="http://capacitateparaelempleo.org/pages.php?r=.index" target="_blank">Capacítate para el empleo </a>
+                        </p>
+                    </div>
+
+                    <div class="contenedor-img ejemplo-3 col-md-12">
+                        <a href="http://capacitateparaelempleo.org/pages.php?r=.index" target="_blank">
+                            <img class="col-xs-12 col-md-12" src="img/Capacitate.png" /> </a>
+
+                        <div class="mascara col-md-12">
+                            <p class="text top-space gray-box gray">
+                                <a href="http://capacitateparaelempleo.org/pages.php?r=.index" target="_blank">Si lo que buscas es mejorar o adquirir ciertas habilidades relacionadas con tu empleo,
+                                    esta plataforma es ideal para ti. Sus cursos son gratuitos y se encuentran disponibles
+                                    de forma permanente. </a>
+                            </p>
+                        </div>
+                        <a href="http://capacitateparaelempleo.org/pages.php?r=.index" target="_blank"> </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="blue-box col-md-12">
+                        <div class="blue-dark"></div>
+
+                        <p class="text bold">
+                            <a href="https://es.khanacademy.org/" target="_blank">Khan Academy </a>
+                        </p>
+                    </div>
+
+                    <div class="contenedor-img ejemplo-3 col-md-12">
+                        <a href="https://es.khanacademy.org/" target="_blank">
+                            <img class="col-xs-12 col-md-12" src="img/Khan.png" /> </a>
+
+                        <div class="mascara col-md-12">
+                            <p class="text top-space gray-box gray">
+                                <a href="https://es.khanacademy.org/" target="_blank">Esta asociación ofrece cursos permanentes y gratuitos de distintas materias, los
+                                    cuales te permiten definir tu propio ritmo de aprendizaje. </a>
+                            </p>
+                        </div>
+                        <a href="https://es.khanacademy.org/" target="_blank"> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="blue-box col-md-12">
+                        <div class="blue-dark"></div>
+
+                        <p class="text bold">
+                            <a href="https://www.duolingo.com/" target="_blank">Duolingo </a>
+                        </p>
+                    </div>
+
+                    <div class="contenedor-img ejemplo-3 col-md-12">
+                        <a href="https://www.duolingo.com/" target="_blank">
+                            <img class="col-xs-12 col-md-12" src="img/duolingo.png" /> </a>
+
+                        <div class="mascara col-md-12">
+                            <p class="text top-space gray-box gray">
+                                <a href="https://www.duolingo.com/" target="_blank">En esta plataforma podrís aprender idiomas como inglés, francés,
+                                    alemán, italiano y portugués, eligiendo tu propio ritmo y horario.
+                                    </a>
+                                <br /> &nbsp;
+                            </p>
+                        </div>
+                        <a href="https://www.duolingo.com/" target="_blank"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recuerda -->
+    <section class="col-md-10" id="Recuerda">
+        <div class="col-md-12" id="espacio" style="border-top: .5em solid #999999; background-color: #F2F2F2">&nbsp;
+            <br /> &nbsp;
+            <div class="col-xs-12 col-sm-8 col-md-8" id="recuerda-cont">
+                <br />
+                <br />
+                <br />
+                <p class="header blue">Recuerda</p>
+
+                <p class="text gray">Contar con una buena formación académica es una gran herramienta para ampliar tus posibilidades
+                    en el futuro. Con el uso de las tecnologías, solo es cuestión de organizarte para completar
+                    tus estudios de una forma sencilla y con la misma validez de un sistema presencial.</p>
+
+                <p class="text gray">Esperamos que este tutorial te haya sido de utilidad. Te invitamos a visitar el portal de Mujer Migrante
+                    para conocer más acerca de este y otros temas.</p>
+
+                <p class="text gray">!Hasta pronto!</p>
+                <br />
+                <br />
+                <br />
+            </div>
+
+            <div class="col-md-4">
+                <img class="col-md-12" id="img-recuerda" src="img/recuerda.png" style="margin-top:-40px;" />
+            </div>
+        </div>
+    </section>
+</section>
+
 </body>
 </html>
