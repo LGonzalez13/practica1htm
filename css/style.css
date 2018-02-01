@@ -77,7 +77,7 @@ body
       
     
 }
-#estudiarLinea,#prepaYbachi,#Cursos,#Recuerda
+#estudiarLinea,#estudiarLinea2,#prepaYbachi,#Cursos,#Recuerda
 {
   z-index: -1;
 }
@@ -181,19 +181,15 @@ img#imglink,#imgregistro
   {
     color: #00adb6;
   }
-  .blue-dark
-  {
-  }
 
-/*Estilos Base*/
 @font-face
 {
     font-family: "Tahoma";
     src: url("Tahoma.woff") format("woff");
 }
-  #espacio{
+  /*#espacio{
     margin-bottom: 30%;
-  }
+  }*/
   .contenedor-img {
     float: left;
     overflow: hidden;
@@ -222,17 +218,17 @@ img#imglink,#imgregistro
   }
   .ejemplo-3 .mascara {
     background-color: #f2f2f2;
-    transform: translateX(-100%);/*Desplazamos a la izquierda*/
+    transform: translateX(-100%);
     opacity: 1;
     transition: all 0.4s ease-in-out;
   }
   .ejemplo-3:hover .mascara {
-    transform: translateX(0px);/*Regresamos a su posicioÃ³n original*/
+    transform: translateX(0px);
   }
   .ejemplo-3:hover img {
-    transform: translateX(150%);/*Desplazamos 300px a la derecha*/
+    transform: translateX(150%);
   }
-  /* Declarar colores */
+ 
   .blue-box{
     background-color: #25c8c0;
     color: #fff;
@@ -287,7 +283,6 @@ img#imglink,#imgregistro
   .selected{
     background-color: #00adb6 !important ;
   }
-  /* Fin colores */
   #selectors > div{
     cursor: pointer;
   }
@@ -359,7 +354,6 @@ img#imglink,#imgregistro
     font-weight: bold;
   }
   #head{
-    /*width: 92%;*/
     position: fixed;
     right: 0;
     background-color: #00adb6;
@@ -396,8 +390,6 @@ img#imglink,#imgregistro
   #abs{
     position: fixed;
     padding: 0;
-    /*width: 8%;*/
-    /*min-width: 65px;*/
   }
   
   #hamburger{
