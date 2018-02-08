@@ -375,13 +375,13 @@ img#imglink,#imgregistro
     top:  -1%;
   }
   
-  .stuff_menu{
+  .menuIZQ{
     background-color: #f2f2f2;
     position: relative;
   height: 78px;
   
   }
-  .stuff_menuLast{
+  .menuIZQLast{
     background-color: #f2f2f2;
     position: relative;
     height: 80px;
@@ -403,21 +403,21 @@ img#imglink,#imgregistro
     margin-top: 19%;
   }
   
-  #little_two{
+  #segundo{
     top: 12%;
   
   
   }
-  #little_th{
+  #tercero{
     top: 22%;
   }
-  #little_f{
+  #cuarto{
     top: 34%;
   }
-  #little_five{
+  #quinto{
     top: 46%;
   }
-  #little_six{
+  #sexto{
     top: 58%;
   }
   #pink{
@@ -437,12 +437,12 @@ img#imglink,#imgregistro
     background-color: #FF6666;
     z-index: -1;
   }
-  .rotateMe {
+  .rotar {
    -webkit-transition: -webkit-transform 1s ease-out;
    -moz-transition: -moz-transform 1s ease-out;
    transition: transform 1s ease-out;
   }
-  .rotateMe:hover {
+  .rotar:hover {
    -webkit-transform: rotate(360deg);
    -moz-transform: rotate(360deg);
    transform: rotate(360deg);
